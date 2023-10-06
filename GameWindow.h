@@ -9,7 +9,11 @@ public:
     GameWindow();
     ~GameWindow();
 
-    void run(); // Main application loop
+    // Methods
+    void showMainMenu();
+    void showOptions();
+    void showGameScreen();
+    void updateGameScreen();
 
 private:
     // Properties
@@ -17,12 +21,5 @@ private:
     QWidget* centralWidget;
     GameScreen gameScreen;
     OptionsScreen optionsScreen;
-
-    // Methods
-    void initializeUI();
-    void connectSignals();
-    void showMainMenu();
-    void showOptions();
-    void showGameScreen();
-    void updateGameScreen();
 };
+
